@@ -49,7 +49,8 @@ SVG (Scalable Vector Graphics, 可伸缩矢量图形) 是W3C 推出的一种开�
     **step2:** 打开下载下来的文件，并在目录中打开demo.html，找到图标相对应的 HTML 实体字符码
 
     **step3:** 打开 res/values/strings.xml，添加 string 值
-        <string name="icons">&#x3605; &#x35ad; &#x35ae; &#x35af;</string>
+        <string name="icons">&#xe640;</string>
+
    **step4:**打开 activity_main.xml，添加 string 值到 TextView：
 
     <TextView
