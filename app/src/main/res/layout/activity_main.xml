@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context="com.example.lym.svgdemo.MainActivity">
 
     <TextView
+        android:id="@+id/tv_font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:text="@string/test_font"/>
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_svg_test_drawable"/>
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/pathView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:pathColor="@color/colorAccent"
+        app:pathWidth="3dp"
+        app:svg="@raw/ic_crowdfuding_item"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:ico_color="@color/colorAccent"
+        app:ico_icon="ion-android-alarm-clock"
+        app:ico_size="48dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="{ion-android-alarm-clock} Chart"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{bux_ttpodicon}"/>
+
+</LinearLayout>

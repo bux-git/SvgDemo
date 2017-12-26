@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SvgDemo</string>
+    <string name="test_font">&#xe66e;</string>
 </resources>
